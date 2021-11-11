@@ -1,0 +1,157 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Lato', sans-serif;
+}
+body {
+	padding-top: 20px;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+/*CONTAINER*/
+.container {
+	max-width: 768px;
+	width: 100%;
+	margin: 20px auto 0;
+}
+/*--------------------*/
+
+
+/*To*/
+.titleh1 {
+	line-height: 1;
+
+	text-align: center;
+	font-weight: 700;
+	font-size: 28px;
+	color: #333;
+}
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.inputTo {
+	width: 100%;
+	margin-right: 10px;
+	padding: 7px 17px;
+
+	border-radius: 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+}
+.inputTo::placeholder {
+	color: #afbabc;
+}
+.submitTo {
+	padding: 7px 17px;
+
+	cursor: pointer;
+	background: #32D2F1;
+	border-radius: 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+	font-weight: 700;
+	font-size: 16px;
+	color: #fff;
+}
+.titleh2 {
+	margin-bottom: 20px;
+
+	line-height: 1;
+
+	text-align: center;
+	font-weight: 700;
+	font-size: 24px;
+	color: #333;
+}
+/*--------------------*/
+
+/*todo*/
+.todo-wrapper {}
+.todo-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 15px;
+	padding: 7px 17px;
+
+	border-radius: 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.todo-item.delition {
+	animation: opacity 1s ease-in-out;
+}
+.description {
+	width: 85%;
+
+	position: relative;
+
+	word-break: break-all;
+
+	font-weight: 400;
+	font-size: 18px;
+	color: #333;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+}
+.brn-delete {
+	padding: 7px 17px;
+
+	cursor: pointer;
+	background: #32D2F1;
+	border-radius: 20px;
+
+	color: #fff;
+}
+
+@keyframes opacity {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+/*--------------------*/
